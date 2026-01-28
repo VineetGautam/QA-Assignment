@@ -38,7 +38,7 @@ public class DelayedButtonTest {
         // Click "Start Process"
         page.click("button:has-text(\"Start Process\")");
 
-        // Wait for the "Confirm Action" button to become enabled (not just visible)
+        
         // Using waitForFunction to ensure button is enabled, not just present
         page.waitForFunction("() => {" +
                 "  const button = document.querySelector('button');" +

@@ -42,7 +42,7 @@ public class ModalFlowTest {
         Locator firstModal = page.locator("[role=\"dialog\"], .modal, [class*=\"modal\"]:visible").first();
         assertTrue("First modal should be visible", firstModal.isVisible());
 
-        // In the modal, click "Show Details"
+        
         // Need to click on the button within the visible modal (not behind it)
         Locator showDetailsButton = firstModal.locator("button:has-text(\"Show Details\")");
         showDetailsButton.click();

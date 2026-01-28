@@ -35,7 +35,7 @@ public class ConditionalRenderTest {
         page.click("text=Flaky Selectors");
         page.waitForLoadState(LoadState.NETWORKIDLE);
 
-        // === Admin User Login Flow ===
+       
         // Click "Admin User" login button
         page.click("button:has-text(\"Admin User\")");
 
@@ -65,7 +65,7 @@ public class ConditionalRenderTest {
         // Wait for logout to complete
         page.waitForLoadState(LoadState.NETWORKIDLE);
 
-        // === Standard User Login Flow ===
+        
         // Click "Standard User" login button
         page.click("button:has-text(\"Standard User\")");
 
